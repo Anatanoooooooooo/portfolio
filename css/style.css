@@ -10,11 +10,13 @@ body {
     align-items: center;
     height: 100vh;
     margin: 0;
-    overflow: hidden; /* Pour éviter le défilement */
+    overflow: hidden;
 
     animation: gradientAnimation 7s ease infinite;
     background: radial-gradient(circle, rgb(88, 88, 88) 0%, rgb(47, 47, 47) 35%,  rgb(0, 0, 0) 65%);
     background-size: 300% 300%;
+
+    user-select: none;
 }
 
 @keyframes gradientAnimation {
@@ -35,6 +37,7 @@ body {
     height: 10px;
     border-radius: 50%;
     background-color: #666666;
-    pointer-events: none; /* Ignore les événements de la souris */
+    pointer-events: none;
     transition: transform 0.2s ease, opacity 0.5s ease;
+    user-select: none;
 }
